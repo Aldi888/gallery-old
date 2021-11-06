@@ -1,6 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import * as C from './App.styles';
 
+const App = () => {
+    return (
+    <C.Container>
+        ...
+    </C.Container>
+    );   
+}
 function App() {
   return (
     <div className="App">
