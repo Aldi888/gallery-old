@@ -32,9 +32,17 @@ const App = () => {
         <div className="emoji">🤪</div>
         <div>Loading...</div>
       </C.ScreenWarning>
-    
-    
-    }
+     }
+
+     {!loading && photos.length > 0 &&
+      <C.Photolist>
+        {photos.map((item, index)=>(
+          <div>{item.name}</div>            
+          ))}
+
+      </C.Photolist>
+
+     }
 
         </C.Area>
     </C.Container>
