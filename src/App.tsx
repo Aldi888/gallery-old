@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import * as C from './App.styles';
-import * from './services/photos';
+import * as Photos from './services/photos';
 import { Photo } from './types/Photo';
 
 
