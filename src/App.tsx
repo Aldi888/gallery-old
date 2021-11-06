@@ -6,7 +6,7 @@ const App = () => {
   return (
     <C.Container>
         ...
-    </C.Container>);(
+    
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -23,6 +23,7 @@ const App = () => {
         </a>
       </header>
     </div>
+    </C.Container>
   );
 }
 
