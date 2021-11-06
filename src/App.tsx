@@ -11,7 +11,7 @@ const App = () => {
   useEffect(()=> {
     const getPhotos = async () => {
         SetLoading(true);
-        setPhotos(await Photos.getAll();
+        setPhotos(await Photos.getAll());
         SetLoading(false);
     }
     getPhotos();
