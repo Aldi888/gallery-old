@@ -3,14 +3,10 @@ import './App.css';
 import * as C from './App.styles';
 
 const App = () => {
-    return (
+  return (
     <C.Container>
         ...
-    </C.Container>
-    );   
-}
-function App() {
-  return (
+    </C.Container>);(
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
