@@ -13,7 +13,7 @@ export const Area = styled.div`
     padding: 30px 0;
 `;
 
-export const Area = styled.h1`
+export const Header = styled.h1`
     margin: 0;
     padding: 0;
     text-align: center;
