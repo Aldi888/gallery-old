@@ -29,7 +29,7 @@ const App = () => {
 
     { loading &&
       <C.ScreenWarning>
-        <div> classname="emoji">🤪</div>
+        <div classname="emoji">🤪</div>
         <div>Loading...</div>
       </C.ScreenWarning>
     
