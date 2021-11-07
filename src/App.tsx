@@ -2,7 +2,7 @@ import { useState, useEffect, FormEvent } from 'react';
 import * as C from './App.styles';
 import * as Photos from './services/photos';
 import { Photo } from './types/Photo';
-
+import { PhotoItem } from './components';
 
 
 const App = () => {
@@ -34,13 +34,23 @@ const App = () => {
       </C.ScreenWarning>
      }
 
+    
+
      {!loading && photos.length > 0 &&
       <C.Photolist>
         {photos.map((item, index)=>(
-          <div>{item.name}</div>            
+          <PhotoItem key={index} url={item.url} name={item.name} />
+                   
           ))}
-
       </C.Photolist>
+
+      {!loading && photos.length === 0 &&
+       <C.ScreenWarning>
+       <div className="emoji">😞</div>
+        <div>Não há fotos cadastradas.</div>
+      </C.ScreenWarning>
+      }
+
 
      }
 
