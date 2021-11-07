@@ -51,9 +51,6 @@ const App = () => {
       </C.ScreenWarning>
       }
 
-
-     }
-
         </C.Area>
     </C.Container>
   );
