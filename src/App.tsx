@@ -18,13 +18,22 @@ const App = () => {
     getPhotos();
   }, []);
 
+  const handleFormSubmit = () => {
+
+  }
+
   return (
     <C.Container>
       <C.Area>
        <C.Header>Galeria de Fotos</C.Header>
 
     {
-      /* Area de Upload */
+      <C.UploadForm method="POST" onSubmit={handleFormSubmit}>
+        <input type="file" name="image" />
+        <input type="submit" value="Enviar" />
+
+
+      </C.UploadForm>
     }
 
     { loading &&
