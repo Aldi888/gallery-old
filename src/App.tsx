@@ -34,24 +34,23 @@ const App = () => {
       </C.ScreenWarning>
      }
 
-    
-
-     {!loading && photos.length > 0 &&
+    {!loading && photos.length > 0 &&
       <C.Photolist>
         {photos.map((item, index)=>(
           <PhotoItem key={index} url={item.url} name={item.name} />
                    
           ))}
       </C.Photolist>
+}
 
-      {!loading && photos.length === 0 &&
-       <C.ScreenWarning>
-       <div className="emoji">😞</div>
-        <div>Não há fotos cadastradas.</div>
-      </C.ScreenWarning>
-      }
-
-        </C.Area>
+{!loading && photos.length === 0 &&
+          <C.ScreenWarning>
+            <div className="emoji">😞</div>
+            <div>Não há fotos cadastradas.</div>
+          </C.ScreenWarning>
+        }
+     
+         </C.Area>
     </C.Container>
   );
 }
