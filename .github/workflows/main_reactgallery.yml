@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'reactgallery'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_17CEDABB01564DED8CE2CA9DBF03D8A8 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_16DEC298601F48EB9FA52999A4813D9F }}
           package: .
